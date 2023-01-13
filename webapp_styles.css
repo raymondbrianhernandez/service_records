@@ -6,16 +6,8 @@
 }
 
 body {
-   background: #eee;
-   font-family: Assistant, sans-serif
-}
-
-html {
-    height: 100%;
-    width: 100%;
-}
-
-body {
+   background: rgb(255, 251, 251);
+   font-family: Assistant, sans-serif;
     /* height: 100vh; */
     width: 100%;
     margin: 0;
@@ -24,6 +16,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+html {
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -169,18 +166,19 @@ content {
     margin: 1em 0 1em 75px;
  }
 
-input {
-   display: block;
-   /* border: 2px solid #ccc; */
-   width: 70%;
+.search-bar {  
+   display: flex;
+   border: 2px solid rgb(55, 113, 129);
+   width: 50%;
    padding: 1px;
-   margin: 2px auto;
-   /* border-radius: 5px; */
+   margin: 1px auto;
+   border-radius: 5px;
+   /* padding-top: 5px; */
 }
 
 label {
    color: white;
-   font-size: 16px;
+   font-size: 12px;
    padding: 10px;
 }
 
@@ -192,12 +190,19 @@ button {
    border: 1;
 }
 
-#edit {
-   background:rgb(104, 182, 109) !important;
+#greenbutton {
+   color: black;
+   background:rgb(144, 218, 149) !important;
 }
 
-#marker {
-   background: rgb(255, 0, 0);
+#redbutton {
+   color: black;
+   background: rgb(239, 150, 150) !important;
+}
+
+#bluebutton {
+   color: black;
+   background: rgb(144, 170, 248) !important;
 }
 
 button:hover{
@@ -243,9 +248,11 @@ button:hover{
 
 /* Table */
 table {
-   border-collapse: collapse;
+   /* border-collapse: collapse; */
    width: 100%;
-   table-layout: auto
+   /* table-layout: auto; */
+   max-width: 800px;
+   overflow-x: auto;
 }
 
 table.list {
@@ -255,12 +262,12 @@ table.list {
 td {
 	color: #000000;
 	border: .5px solid #dddfe1;
-   font-size: .9em;
+   font-size: 1em;
    height: 50px;
 }
 
 tr {
-	background-color: #9cd1d5;
+	background-color: #d2f9fc;
    color: black;
 }
 
@@ -273,7 +280,7 @@ tr {
    border-collapse: collapse;
    width: 100%;
    border: 1px solid #ddd;
-   font-size: 14px;
+   font-size: 12px;
 }
  
 #address-table td {
@@ -311,8 +318,8 @@ tr {
 }
 
 #map {
-   width: auto; 
-   height: 500px;
+   width: 70%; 
+   height: 300px;
 }
 
 #editable {
@@ -322,4 +329,36 @@ tr {
 
 .hideTr {
    background-color: whitesmoke;
+}
+
+input {
+   width: auto;
+   /* display: inline-block; */
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+label {
+   color: black;
+   font-size: 1em;
+   min-width: 80px;
+}
+
+textarea {
+   resize: both !important;
+}
+
+.maplibregl-ctrl-attrib-inner,
+.mapboxgl-ctrl-attrib-inner,
+.maplibregl-ctrl-attrib-button, 
+.mapboxgl-ctrl-attrib-button {
+   display: none !important;
+}
+
+.map-container {
+   display: flex !important;
+}
+
+.mapboxgl-map, .maplibregl-map { 
+   text-align: center !important;
 }
