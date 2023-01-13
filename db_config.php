@@ -12,10 +12,10 @@
 
    // LIVE SERVER
    /*
-   $host        = "";  
-   $user        = "";  
-   $password    = "";  
-   $db_name     = "";
+   $host        = "127.0.0.1:3306";  
+   $user        = "u803325201_root";  
+   $password    = "P@ssword1";  
+   $db_name     = "u803325201_service_record";
    $con         = mysqli_connect($host, $user, $password, $db_name);
    
    if(mysqli_connect_errno()) {  
