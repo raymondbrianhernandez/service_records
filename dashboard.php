@@ -106,14 +106,7 @@ ___|______|________|________|______|______|_________|___
                         <p><b> Change goal: </b><span style="font-size:medium; color:red;">
                         </p>
                         <p>
-                            <select name = "goal">
-                                <option value = "<?= $_SESSION['goal']; ?>"> <?= $_SESSION['goal']; ?> </option>
-                                <option value = "Regular Pioneer (70 hours)"> Regular Pioneer (70 hours) </option>
-                                <option value = "Auxiliary Pioneer (50 hours)"> Auxiliary Pioneer (50 hours) </option>
-                                <option value = "Auxiliary Pioneer (30 hours)"> Auxiliary Pioneer (30 hours) </option>
-                                <option value = "Future Pioneer"> Future Pioneer </option>
-                                <option value = "Special Pioneer (90 hours)"> Special Pioneer (90 hours) </option>
-                            </select>
+                            <?php include ( 'goals.php' ); ?>
                         </p>
                         <hr>
                         <p style="text-align:center"><b> Overseer Contact Information </b></p>
